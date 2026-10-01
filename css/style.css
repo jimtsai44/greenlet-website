@@ -162,6 +162,43 @@ section h2.center { margin-bottom: 44px; }
 .page-hero .lede { margin-inline: auto; }
 .main-nav a[aria-current="page"] { color: var(--rose); }
 
+/* ===== Contact info (Contact Us) ===== */
+.contact-info { padding-block: 0 clamp(32px, 5vw, 56px); text-align: center; }
+.contact-details p { font-size: 1.1rem; margin-bottom: 8px; color: var(--ink-soft); }
+.contact-details a { color: var(--rose); font-weight: 700; text-decoration: none; }
+.contact-details a:hover { text-decoration: underline; }
+.contact-details .social-row { justify-content: center; margin-top: 16px; color: var(--ink-soft); }
+.contact-details .social-row a { color: var(--ink-soft); }
+.contact-details .social-row a:hover { color: var(--rose); }
+
+/* ===== Journal (Growing Up index + articles) ===== */
+.journal { padding-block: clamp(24px, 5vw, 56px) clamp(48px, 7vw, 88px); }
+.journal-list { display: flex; flex-direction: column; gap: 22px; max-width: 820px; margin-inline: auto; }
+.journal-card {
+  --ink: var(--ink-fixed);
+  --ink-soft: #5C5544;
+  color: var(--ink-fixed);
+  display: flex; gap: 24px; align-items: flex-start;
+  background: var(--paper); border: 2px solid var(--wood-line); border-radius: 10px; padding: 22px;
+}
+.journal-thumb-wrap { flex: 0 0 160px; }
+.journal-thumb { width: 100%; height: auto; display: block; border-radius: 6px; }
+.journal-tag {
+  font-family: var(--font-hand); font-size: 1.05rem; color: var(--sage-dark); display: block; margin-bottom: 4px;
+}
+.journal-card h2 { font-size: 1.35rem; margin-bottom: 8px; }
+.journal-card h2 a { color: var(--ink-fixed); text-decoration: none; }
+.journal-card h2 a:hover { color: var(--rose); }
+.journal-excerpt { color: #5C5544; font-size: 0.96rem; margin-bottom: 12px; }
+.journal-read { color: var(--rose); font-weight: 700; text-decoration: none; font-size: 0.92rem; }
+.journal-read:hover { text-decoration: underline; }
+.journal-back { display: inline-block; margin-bottom: 24px; color: var(--rose); font-weight: 700; text-decoration: none; font-size: 0.92rem; }
+.journal-back:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .journal-card { flex-direction: column; }
+  .journal-thumb-wrap { width: 140px; }
+}
+
 /* ===== Corners of the room (audience) ===== */
 .audience { padding-block: clamp(48px, 7vw, 88px); }
 .audience-grid {

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newsletter | Greenlet</title>
-<meta name="description" content="Leave your email and Greenlet will let you know the moment pre-orders open, with a free refill pack for the first 100 subscribers.">
+<title>Growing Up the Wall | Greenlet</title>
+<meta name="description" content="From a handful of seed to the first haircut: the real timeline behind every Greenlet doll, stage by stage.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
@@ -29,11 +29,12 @@
     </a>
 
     <nav class="main-nav" id="mainNav" aria-label="Main">
-      <a href="index.html#shop">Shop</a>
-      <a href="index.html#route">Growing Up</a>
-      <a href="index.html#story">Our Story</a>
+      <a href="index.html#top">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="growing-up.html" aria-current="page">Growing Up</a>
       <a href="faq.html">FAQ</a>
-      <a href="subscribe.html" aria-current="page">Newsletter</a>
+      <a href="index.html#story">About Us</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
 
     <div class="header-actions">
@@ -49,7 +50,7 @@
         <span>Cart</span>
         <span class="cart-count" id="cartCount">0</span>
       </button>
-      <a class="btn btn-primary btn-small" href="index.html#shop">Shop now</a>
+      <a class="btn btn-primary btn-small" href="shop.html">Shop now</a>
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
@@ -61,21 +62,47 @@
 
   <section class="page-hero">
     <div class="wrap">
-      <p class="eyebrow center">stay in the loop</p>
-      <h1>Leave a note on the sill</h1>
-      <p class="lede">Greenlet hasn't opened for pre-orders yet. Leave your email and we'll let you know the moment it does &mdash; the first 100 people on the list get a free refill pack thrown in with their order.</p>
+      <a class="journal-back" href="growing-up.html">&larr; Back to Growing Up</a>
+      <p class="eyebrow center">seed to first trim</p>
+      <h1>Growing Up the Wall</h1>
+      <p class="lede">The real timeline behind every Greenlet doll &mdash; from a handful of seed to the first haircut, marked up like a kid's height chart on the doorframe.</p>
     </div>
   </section>
 
-  <section class="newsletter">
-    <div class="wrap newsletter-row newsletter-row-standalone">
-      <h2 class="sr-only">Sign up for updates</h2>
-      <form class="newsletter-form" id="newsletterForm">
-        <label class="sr-only" for="newsletterEmail">Email</label>
-        <input type="email" id="newsletterEmail" name="email" placeholder="Your email" required>
-        <button type="submit" class="btn btn-primary">Join the list</button>
-      </form>
-      <p class="form-note" id="newsletterNote" role="status" aria-live="polite"></p>
+  <section class="route-section">
+    <div class="wrap">
+      <h2 class="sr-only">The four stages</h2>
+
+      <ol class="route">
+        <li class="r-item">
+          <span class="r-num">Day 0</span>
+          <div class="r-body">
+            <h3>Plant it</h3>
+            <p>Sprinkle the seed over the coir growing medium in the doll's head, water it once, and set it somewhere bright.</p>
+          </div>
+        </li>
+        <li class="r-item">
+          <span class="r-num">Day 3&ndash;5</span>
+          <div class="r-body">
+            <h3>The first pencil mark: it sprouts</h3>
+            <p>The first blades push up through the doll's head. This is the bit kids check on every morning.</p>
+          </div>
+        </li>
+        <li class="r-item">
+          <span class="r-num">Day 10&ndash;14</span>
+          <div class="r-body">
+            <h3>First trim</h3>
+            <p>Grass hits 8&ndash;10cm. Grab the mini scissors that came in the box and give it its first haircut.</p>
+          </div>
+        </li>
+        <li class="r-item">
+          <span class="r-num">Every 7&ndash;10 days</span>
+          <div class="r-body">
+            <h3>Keep marking the wall</h3>
+            <p>Water, trim, repeat. One seed packet keeps a doll growing for about 4&ndash;6 weeks before it's time to reseed.</p>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 

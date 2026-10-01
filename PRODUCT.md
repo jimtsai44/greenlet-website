@@ -29,7 +29,9 @@ Combines three usually-separate things into one object: fresh pet grass, a kids'
 
 - Sold and shipped within New Zealand (domestic shipping only).
 - New Zealand biosecurity rules (MPI) govern seed and growing-media sale/import — the product uses biosecurity-compliant, certified seed and growing medium; this is presented as a trust signal, not just a compliance note.
-- Site is a small static multi-page marketing site (`index.html`, `faq.html`, `subscribe.html`); no backend, payment processor, or live inventory system yet. Client plans to keep publishing articles going forward, so the header nav is the site's directory — FAQ and the newsletter signup were deliberately pulled off the homepage onto their own pages, reached only via nav click, to establish the pattern a future articles/journal section will extend.
+- Site is a small static multi-page marketing site: `index.html` (home), `shop.html`, `growing-up.html` (journal index), `growing-up-the-wall.html` (first journal article), `faq.html`, `contact.html`. No backend, payment processor, or live inventory system yet.
+- Nav order: Home, Shop, Growing Up, FAQ, About Us, Contact Us. "Our Story" (still an `index.html#story` anchor) is labelled "About Us" in the nav and was deliberately moved after FAQ. "Newsletter" was renamed "Contact Us" (`contact.html`, replacing the old `subscribe.html`) and now leads with direct contact details (email, shipping note, socials) above the pre-order email signup, rather than being signup-only.
+- The header nav is the site's directory. `Home`, `Shop`, and `Growing Up` are now separate pages (not same-page anchors); `Our Story` is still an anchor into `index.html`. This is in place because the client plans to keep publishing articles under Growing Up going forward — new products or test updates get added as new journal posts, each a standalone page linked from the `growing-up.html` index (title, thumbnail, excerpt, "Read the full post" — stacked top to bottom, not a grid). `growing-up-the-wall.html` is the first test post, carrying the original growth-timeline content.
 
 ## Capabilities and Constraints
 
