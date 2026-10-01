@@ -195,6 +195,22 @@
     });
   }
 
+  var navToggle = document.getElementById("navToggle");
+  var mainNav = document.getElementById("mainNav");
+  if (navToggle && mainNav) {
+    navToggle.addEventListener("click", function () {
+      var willOpen = !mainNav.classList.contains("is-open");
+      mainNav.classList.toggle("is-open", willOpen);
+      navToggle.setAttribute("aria-expanded", String(willOpen));
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && mainNav.classList.contains("is-open")) {
+        mainNav.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   var grassScenes = document.querySelectorAll(".grass-scene");
   var heroCaption = document.getElementById("heroCaption");
   if (grassScenes.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
