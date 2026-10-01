@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenlet | Cat Grass Dolls, NZ</title>
+<meta name="description" content="Greenlet: hand-thrown ceramic cat-grass dolls, made in small batches in New Zealand. Plant it, watch it grow, give it a trim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 28 28" width="36" height="36">
+          <path d="M5 16 C5 9 11 5 17 6.5 C22.5 8 25.5 12.5 23 16.5 C21.8 18.5 19 19 17 17.5 C14.5 21.5 7 22 3.5 17.5 C4.3 18 5 17.2 5 16Z" fill="var(--sage-dark)"/>
+          <path d="M23.5 11 L27.5 12 L23.5 14.2Z" fill="var(--gold)"/>
+          <circle cx="20" cy="10" r="1.1" fill="var(--wall-cream)"/>
+          <path d="M7 14.5 C5 17.5 7 20.5 12 19.5 C9 17.5 8 16 9 13.5Z" fill="var(--sage)"/>
+        </svg>
+      </span>
+      <span class="logo-text">Greenlet</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#route">Growing Up</a>
+      <a href="#story">Our Story</a>
+      <a href="faq.html">FAQ</a>
+      <a href="subscribe.html">Newsletter</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartToggle" aria-haspopup="true" aria-controls="cartPanel" aria-expanded="false">
+        <span class="lamp-icon" id="headerFlag" aria-hidden="true">
+          <svg viewBox="0 0 28 28" width="22" height="22">
+            <path d="M14 2 L14 7" stroke="var(--wood-line)" stroke-width="1.6"/>
+            <path d="M8 7 H20 L17 15 H11 Z" fill="none" stroke="var(--wood-line)" stroke-width="1.6"/>
+            <path class="lamp-off" d="M9 7.5 H19 L16.3 14.5 H11.7 Z" fill="none"/>
+            <path class="lamp-glow" d="M9 7.5 H19 L16.3 14.5 H11.7 Z" fill="var(--gold)"/>
+          </svg>
+        </span>
+        <span>Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a class="btn btn-primary btn-small" href="#shop">Shop now</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO: the window nook -->
+  <section class="hero" id="top">
+    <div class="wrap hero-row">
+      <div class="hero-copy">
+        <h1>A doll that grows<br>its own hair.</h1>
+        <p class="lede">Greenlet hand-throws ceramic cat-grass dolls in small batches. Plant the seed, watch the "hair" come in, then give it a trim: fresh grass for the cat, a proper project for the kids, and one more green thing on the windowsill that's actually hard to kill.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#shop">Shop now</a>
+          <a class="btn btn-ghost" href="#route">See how it grows</a>
+        </div>
+        <ul class="trust-strip">
+          <li><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>MPI-compliant seed</li>
+          <li><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Hand-thrown, small batches</li>
+          <li><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sprouts in 3&ndash;5 days</li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 460 460" class="window-svg">
+          <!-- wallpaper: just a whisper of stripe behind the window, not a full page fill -->
+          <g opacity="0.2">
+            <rect x="96" y="96" width="14" height="310" fill="var(--wall-sage)"/>
+            <rect x="350" y="96" width="14" height="310" fill="var(--wall-sage)"/>
+          </g>
+          <!-- hanging lamp -->
+          <line x1="230" y1="0" x2="230" y2="46" stroke="var(--wood-line)" stroke-width="2"/>
+          <g class="hero-lamp">
+            <path d="M212 46 H248 L240 74 H220 Z" fill="none" stroke="var(--wood-line)" stroke-width="2"/>
+            <path class="lamp-off" d="M214 47.5 H246 L239 72.5 H221 Z" fill="none"/>
+            <path class="lamp-glow" d="M214 47.5 H246 L239 72.5 H221 Z" fill="var(--gold)" opacity="0.9"/>
+          </g>
+          <!-- arched window frame -->
+          <path d="M110 400 L110 160 C110 100 350 100 350 160 L350 400 Z" fill="var(--paper)" stroke="var(--wood)" stroke-width="10"/>
+          <path d="M110 400 L110 160 C110 100 350 100 350 160 L350 400 Z" fill="none" stroke="var(--wood-line)" stroke-width="2" opacity="0.4"/>
+          <line x1="230" y1="104" x2="230" y2="400" stroke="var(--wood)" stroke-width="6"/>
+          <!-- sky through glass -->
+          <path d="M118 400 L118 162 C118 108 222 106 222 162 L222 400 Z" fill="var(--slate)" opacity="0.35"/>
+          <path d="M238 400 L238 162 C238 106 342 108 342 162 L342 400 Z" fill="var(--slate)" opacity="0.35"/>
+          <!-- curtains -->
+          <path d="M110 100 C90 180 96 320 78 404 L110 404 L110 100 Z" fill="var(--blush)" opacity="0.85"/>
+          <path d="M350 100 C370 180 364 320 382 404 L350 404 L350 100 Z" fill="var(--blush)" opacity="0.85"/>
+          <!-- sill -->
+          <rect x="96" y="392" width="268" height="20" rx="2" fill="var(--wood)"/>
+          <ellipse cx="230" cy="424" rx="120" ry="14" fill="var(--shadow)"/>
+          <!-- doll on the sill: pot is static, the "hair" cycles through the growth story -->
+          <g transform="translate(170,300)">
+            <path d="M50 62C74 62 82 82 78 100C74 114 26 114 22 100C18 82 26 62 50 62Z" fill="var(--clay)"/>
+            <path d="M32 64 L22 40 L44 56Z" fill="var(--clay)"/>
+            <path d="M68 64 L78 40 L56 56Z" fill="var(--clay)"/>
+            <g class="grass-scene" data-caption="Day 0 &mdash; the seed goes in">
+              <circle cx="34" cy="36" r="2" fill="var(--sage-dark)" opacity="0.55"/>
+              <circle cx="50" cy="35" r="2" fill="var(--sage-dark)" opacity="0.55"/>
+              <circle cx="66" cy="36" r="2" fill="var(--sage-dark)" opacity="0.55"/>
+            </g>
+            <g class="grass-scene" data-caption="Day 4 &mdash; the first sprouts">
+              <path d="M34 36 C33 30 35 26 33 20" stroke="var(--sage)" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <path d="M50 35 C50 29 51 25 50 19" stroke="var(--sage-dark)" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <path d="M66 36 C67 30 65 26 67 20" stroke="var(--sage)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </g>
+            <g class="grass-scene is-active" data-caption="hand-thrown, one lamp-lit batch at a time">
+              <path d="M34 36 C30 24 36 14 32 2" stroke="var(--sage)" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <path d="M50 32 C50 20 53 10 50 -2" stroke="var(--sage-dark)" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <path d="M66 36 C70 24 64 14 68 2" stroke="var(--sage)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </g>
+            <circle cx="40" cy="86" r="4" fill="var(--ink)"/>
+            <circle cx="60" cy="86" r="4" fill="var(--ink)"/>
+          </g>
+          <!-- black cat curled on the sill -->
+          <g transform="translate(255,368)">
+            <path d="M0 30 C0 10 20 -4 44 2 C64 6 70 22 62 32 C56 40 40 40 30 34 C22 40 8 42 0 30Z" fill="var(--cat-black)"/>
+            <path d="M6 4 L14 -8 L18 6Z" fill="var(--cat-black)"/>
+            <path d="M22 -2 L26 -14 L32 2Z" fill="var(--cat-black)"/>
+            <circle cx="12" cy="10" r="1.6" fill="var(--paper)"/>
+            <circle cx="22" cy="8" r="1.6" fill="var(--paper)"/>
+            <path d="M60 26 C70 24 76 14 72 6" stroke="var(--cat-black)" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </g>
+          <!-- green bird, standing front-on on top of the window frame, wings folded -->
+          <g transform="translate(126,84)">
+            <line x1="15" y1="27" x2="14.5" y2="34" stroke="var(--wood-line)" stroke-width="1.6"/>
+            <line x1="25" y1="27" x2="25.5" y2="34" stroke="var(--wood-line)" stroke-width="1.6"/>
+            <ellipse cx="20" cy="20" rx="12.5" ry="13.5" fill="var(--sage-dark)"/>
+            <path d="M10 14 C8.5 18 9 23 12.5 26.5" stroke="var(--sage)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <path d="M30 14 C31.5 18 31 23 27.5 26.5" stroke="var(--sage)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="7.5" fill="var(--sage-dark)"/>
+            <path d="M16.5 11 L23.5 11 L20 16Z" fill="var(--gold)"/>
+            <circle cx="16.5" cy="6" r="1.2" fill="var(--paper)"/>
+            <circle cx="23.5" cy="6" r="1.2" fill="var(--paper)"/>
+          </g>
+        </svg>
+        <p class="hero-caption" id="heroCaption">hand-thrown, one lamp-lit batch at a time</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORNERS OF THE ROOM (audience) -->
+  <section class="audience">
+    <div class="wrap">
+      <p class="eyebrow center">who it's for</p>
+      <h2 class="center">Three corners of the room</h2>
+
+      <div class="audience-grid">
+        <article class="audience-card">
+          <div class="a-head">
+            <div class="a-icon">
+              <svg viewBox="0 0 40 40" width="30" height="30"><path d="M4 32 C4 16 34 16 34 32Z" fill="var(--cat-black)"/><path d="M8 18 L13 8 L17 20Z" fill="var(--cat-black)"/><path d="M23 20 L27 8 L32 18Z" fill="var(--cat-black)"/><circle cx="14" cy="26" r="1.6" fill="var(--paper)"/><circle cx="24" cy="26" r="1.6" fill="var(--paper)"/></svg>
+            </div>
+            <h3>The windowsill cat</h3>
+          </div>
+          <p>Cats need fresh grass to help things move and keep their coat right. Skip the wrecked balcony pot. Grow it somewhere your cat will actually curl up beside.</p>
+        </article>
+
+        <article class="audience-card">
+          <div class="a-head">
+            <div class="a-icon">
+              <svg viewBox="0 0 40 40" width="30" height="30"><rect x="6" y="22" width="28" height="4" fill="var(--wood)"/><rect x="8" y="26" width="24" height="10" fill="none" stroke="var(--wood)" stroke-width="2.2"/><circle cx="14" cy="14" r="6" fill="none" stroke="var(--rose)" stroke-width="2.2"/><circle cx="14" cy="30" r="2" fill="none" stroke="var(--rose)" stroke-width="1.8"/><path d="M18 18 L28 8" stroke="var(--rose)" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>The craft-desk kids</h3>
+          </div>
+          <p>Planting, watching it sprout, then giving the doll its first haircut with safe scissors: a proper afternoon project, not another screen.</p>
+        </article>
+
+        <article class="audience-card">
+          <div class="a-head">
+            <div class="a-icon">
+              <svg viewBox="0 0 40 40" width="30" height="30"><rect x="5" y="10" width="30" height="4" fill="var(--wood)"/><rect x="5" y="26" width="30" height="4" fill="var(--wood)"/><rect x="9" y="14" width="6" height="12" fill="var(--slate)"/><rect x="17" y="12" width="6" height="14" fill="var(--rose)"/><rect x="25" y="15" width="6" height="11" fill="var(--sage)"/></svg>
+            </div>
+            <h3>The bookshelf beginner</h3>
+          </div>
+          <p>No soil to source, no feeding schedule. Follow the card that comes with it, water when it says to, and it grows anyway.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROWING UP THE WALL (timeline) -->
+  <section class="route-section" id="route">
+    <div class="wrap">
+      <p class="eyebrow center">seed to first trim</p>
+      <h2 class="center">Growing Up the Wall</h2>
+
+      <ol class="route">
+        <li class="r-item">
+          <span class="r-num">Day 0</span>
+          <div class="r-body">
+            <h3>Plant it</h3>
+            <p>Sprinkle the seed over the coir growing medium in the doll's head, water it once, and set it somewhere bright.</p>
+          </div>
+        </li>
+        <li class="r-item">
+          <span class="r-num">Day 3&ndash;5</span>
+          <div class="r-body">
+            <h3>The first pencil mark: it sprouts</h3>
+            <p>The first blades push up through the doll's head. This is the bit kids check on every morning.</p>
+          </div>
+        </li>
+        <li class="r-item">
+          <span class="r-num">Day 10&ndash;14</span>
+          <div class="r-body">
+            <h3>First trim</h3>
+            <p>Grass hits 8&ndash;10cm. Grab the mini scissors that came in the box and give it its first haircut.</p>
+          </div>
+        </li>
+        <li class="r-item">
+          <span class="r-num">Every 7&ndash;10 days</span>
+          <div class="r-body">
+            <h3>Keep marking the wall</h3>
+            <p>Water, trim, repeat. One seed packet keeps a doll growing for about 4&ndash;6 weeks before it's time to reseed.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ON THE SHELF (products) -->
+  <section class="products" id="shop">
+    <div class="wrap">
+      <p class="eyebrow center">the shop shelf</p>
+      <h2 class="center">On the Shelf</h2>
+
+      <div class="product-grid">
+
+        <article class="product-card" data-id="classic" data-name="Classic Grass Doll" data-price="29">
+          <span class="p-num">No.1</span>
+          <span class="badge badge-hot">Bestseller</span>
+          <div class="p-art">
+            <svg viewBox="0 0 100 100" width="72" height="72"><path d="M50 40C68 40 74 58 70 72C66 84 34 84 30 72C26 58 32 40 50 40Z" fill="var(--clay)"/><path d="M36 42 L28 24 L46 36Z" fill="var(--clay)"/><path d="M64 42 L72 24 L54 36Z" fill="var(--clay)"/><path d="M42 20 C40 12 44 6 42 0" stroke="var(--sage)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M50 18 C50 10 52 4 50 -2" stroke="var(--sage-dark)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M58 20 C60 12 56 6 58 0" stroke="var(--sage)" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="42" cy="58" r="3" fill="var(--ink)"/><circle cx="58" cy="58" r="3" fill="var(--ink)"/></svg>
+          </div>
+          <h3>Classic Grass Doll</h3>
+          <p class="p-tag">The one every cat asks for</p>
+          <div class="p-row">
+            <span class="p-price">$29 NZD</span>
+            <button class="btn btn-small btn-primary add-to-cart">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="kids" data-name="Grow &amp; Style Twin Pack" data-price="49">
+          <span class="p-num">No.2</span>
+          <span class="badge badge-new">New</span>
+          <div class="p-art">
+            <svg viewBox="0 0 100 100" width="72" height="72"><path d="M36 44C50 44 55 58 52 68C49 78 23 78 20 68C17 58 22 44 36 44Z" fill="var(--clay)"/><path d="M64 44C78 44 83 58 80 68C77 78 51 78 48 68C45 58 50 44 64 44Z" fill="var(--clay)"/><path d="M28 24 C26 34 30 38 30 44" stroke="var(--sage)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M36 22 C36 32 38 36 38 44" stroke="var(--sage-dark)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M62 22 C62 32 64 36 64 44" stroke="var(--sage)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M70 24 C72 34 68 38 68 44" stroke="var(--sage-dark)" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="30" cy="60" r="9" fill="none" stroke="var(--rose)" stroke-width="3"/><circle cx="30" cy="76" r="9" fill="none" stroke="var(--rose)" stroke-width="3"/><path d="M37 55 L70 30" stroke="var(--rose)" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Grow &amp; Style Twin Pack</h3>
+          <p class="p-tag">2 dolls + kid-safe scissors</p>
+          <div class="p-row">
+            <span class="p-price">$49 NZD</span>
+            <button class="btn btn-small btn-primary add-to-cart">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="refill" data-name="Seed &amp; Medium Refill (3-pack)" data-price="12">
+          <span class="p-num">No.3</span>
+          <span class="badge badge-plain">Refill favourite</span>
+          <div class="p-art">
+            <svg viewBox="0 0 100 100" width="72" height="72"><rect x="26" y="18" width="48" height="64" rx="4" fill="var(--wall-cream)" stroke="var(--wood-line)" stroke-width="2"/><line x1="26" y1="34" x2="74" y2="34" stroke="var(--wood-line)" stroke-width="2" stroke-dasharray="4 4"/><circle cx="50" cy="54" r="12" fill="none" stroke="var(--sage-dark)" stroke-width="2.4"/><path d="M50 46 C46 50 46 58 50 62 C54 58 54 50 50 46Z" fill="var(--sage)"/><text x="50" y="75" text-anchor="middle" font-size="9" fill="var(--ink)" font-family="inherit">SEEDS</text></svg>
+          </div>
+          <h3>Seed &amp; Medium Refill (3-pack)</h3>
+          <p class="p-tag">Keeps the growth chart climbing</p>
+          <div class="p-row">
+            <span class="p-price">$12 NZD</span>
+            <button class="btn btn-small btn-primary add-to-cart">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="artisan" data-name="Artisan Limited Edition" data-price="65">
+          <span class="p-num">No.4</span>
+          <span class="badge badge-limited">Limited</span>
+          <div class="p-art">
+            <svg viewBox="0 0 100 100" width="72" height="72"><path d="M50 42C70 42 76 60 71 74C67 86 33 86 29 74C24 60 30 42 50 42Z" fill="var(--rose)" opacity="0.85"/><path d="M50 42C70 42 76 60 71 74" fill="none" stroke="var(--wood-line)" stroke-width="1.6" opacity="0.5"/><path d="M35 44 L26 26 L46 38Z" fill="var(--rose)" opacity="0.85"/><path d="M65 44 L74 26 L54 38Z" fill="var(--rose)" opacity="0.85"/><path d="M40 22 C38 14 42 8 40 2" stroke="var(--sage-dark)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M50 20 C50 12 52 6 50 0" stroke="var(--sage)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M60 22 C62 14 58 8 60 2" stroke="var(--sage-dark)" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="42" cy="60" r="3" fill="var(--ink)"/><circle cx="58" cy="60" r="3" fill="var(--ink)"/></svg>
+          </div>
+          <h3>Artisan Limited Edition</h3>
+          <p class="p-tag">Hand-thrown by an NZ ceramicist, no two alike</p>
+          <div class="p-row">
+            <span class="p-price">$65 NZD</span>
+            <button class="btn btn-small btn-primary add-to-cart">Add to cart</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="wrap story-row">
+      <div class="story-mascots" aria-hidden="true">
+        <svg viewBox="0 0 120 70" class="mascot-svg">
+          <!-- cat -->
+          <g transform="translate(4,18)">
+            <path d="M0 30 C0 10 20 -4 44 2 C64 6 70 22 62 32 C56 40 40 40 30 34 C22 40 8 42 0 30Z" fill="var(--on-accent)"/>
+            <path d="M6 4 L14 -8 L18 6Z" fill="var(--on-accent)"/>
+            <path d="M22 -2 L26 -14 L32 2Z" fill="var(--on-accent)"/>
+            <circle cx="12" cy="10" r="1.6" fill="var(--sage-dark)"/>
+            <circle cx="22" cy="8" r="1.6" fill="var(--sage-dark)"/>
+            <path d="M60 26 C70 24 76 14 72 6" stroke="var(--on-accent)" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </g>
+          <!-- bird, perched on the cat's back, the two mascots together -->
+          <g transform="translate(52,4) rotate(-6)">
+            <path d="M0 16 C0 6 10 -1 20 0.5 C29 2 34 9 30 16.5 C28 20.5 23 21 20 19 C17 25 6 26.5 0 20.5 C1.5 21 3 19.5 3.5 17.5Z" fill="var(--on-accent)"/>
+            <path d="M29 8 L37 9.5 L29 13.5Z" fill="var(--gold)"/>
+            <circle cx="24.5" cy="6.5" r="1.4" fill="var(--sage-dark)"/>
+            <path d="M4 15 C1 20 4 25 12 23.5 C7 20.5 5.5 18 7 14.5Z" fill="var(--on-accent)" opacity="0.7"/>
+          </g>
+        </svg>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">our story</p>
+        <h2>It started with a wrecked balcony pot</h2>
+        <p>Every time the cat went out for a chew, she came back having flattened half the grass. We figured if she was going to sit in it anyway, it might as well look like her. The first doll was hand-thrown on a wheel in a garage; now Greenlet makes them in small batches for cats and kids around New Zealand.</p>
+        <ul class="fact-row">
+          <li>Hand-thrown in small batches</li>
+          <li>MPI biosecurity-compliant seed</li>
+          <li>Compostable coir medium</li>
+          <li>30-day sprout guarantee</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div class="footer-brand">
+      <span class="logo-text">Greenlet</span>
+      <p>Hand-thrown ceramic cat-grass dolls, made in small batches in New Zealand.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Get in touch</h3>
+      <p><a href="mailto:hello@greenlet.co.nz">hello@greenlet.co.nz</a></p>
+      <p>Currently shipping within New Zealand only</p>
+    </div>
+    <div class="footer-col">
+      <h3>Follow along</h3>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 8.5h2.5V5H14c-2.2 0-4 1.8-4 4v2H8v3.5h2V21h3.5v-6.5h2.6L17 11H13.5V9c0-.3.2-.5.5-.5Z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="copyright">&copy; 2026 Greenlet. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CART PANEL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel" aria-hidden="true">
+  <div class="cart-head">
+    <h3>Your cart</h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">
+      <svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">The lamp's still unlit. Your cart is empty.</p>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">$0 NZD</span>
+    </div>
+    <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to checkout</button>
+    <p class="checkout-note" id="checkoutNote" role="status" aria-live="polite"></p>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

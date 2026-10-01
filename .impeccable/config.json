@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-28T02:17:12.301Z",
+        "reason": "Claude: all side-tab hits here are the OWN-WORLD timber-post structural dividers (header/story/cart-panel boundary lines) named in the direction contract, not decorative card-accent stripes"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "css/style.css"
+        ],
+        "createdAt": "2026-09-28T02:17:12.738Z",
+        "reason": "Claude: same post-divider motif, source-level rule for the cart-panel drawer edge"
+      }
+    ]
+  }
+}
